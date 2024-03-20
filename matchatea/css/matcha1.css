@@ -43,29 +43,30 @@ hr {
 .content {
     display: flex;
     flex-direction: column;
+    border-left: #b5b1b1 solid 4px;
+    padding-left: 120px;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    margin: auto;
     height: calc(100vh - 120px); 
 }
 
 main {
     margin-top: 60px; 
     margin-bottom: 60px;
-
+    display: flex;
 }
 
-.main-content {
-    position: relative;
-}
-
-.main-content::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 470px;
-    width: 4px; 
-    height: 100%;
-    background-color: #ccc; 
+.phrase {
+   width: 45%;
+   text-align: center;
+   font-size: 20px; 
+   color: #333;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
 h1 {
@@ -139,16 +140,7 @@ input[type="submit"]:hover {
 }
 
 
-.phrase {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    margin-left: 150px; 
-    width: 150px;
-    text-align: center;
-    color: #333; 
-}
+
 
 footer {
     background-color: #333;
@@ -157,4 +149,11 @@ footer {
     padding: 10px 0;
 }
 
+
+@media screen and (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
 
