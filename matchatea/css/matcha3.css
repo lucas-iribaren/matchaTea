@@ -7,12 +7,9 @@
 
 /* Styles généraux pour le corps de la page */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: Kaisei HarunoUmi, serif;
     color: #333;
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
+    background-color: #F9EFDB;
 }
 
 /* En-tête */
@@ -44,7 +41,7 @@ header img {
 }
 
 .soustitre_accueil {
-    text-align: justify;
+    text-align: center;
 }
 
 .image-container {
