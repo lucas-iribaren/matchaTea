@@ -25,7 +25,7 @@ p{
     width: 100%;
     text-align: center;
     margin: 10px 0;
-    padding: 10px 0;
+    padding: 10px;
     background-color: var(--vert_fonce1);
     color: var(--beige_clair);
 }
@@ -50,6 +50,7 @@ p{
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: box-shadow 0.5s;
+    border-radius: 5%;
 }
 
 .produit:hover{
@@ -58,4 +59,31 @@ p{
 
 .img_produit{
     height: 150px;
+}
+
+@media screen and (max-width: 991px){
+    .section_vente{
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .produit{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    main{
+        margin-left: 0;
+    }
+    .section_vente{
+        width: 100%;
+    }
+    .produit{
+        width: 90%;
+    }
+    .article_vente{
+        margin-top: 10px;
+    }
+
+
 }
