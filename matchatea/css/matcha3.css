@@ -59,4 +59,12 @@ header img {
     color: var(--beige_clair);
     text-align: center;
     margin-top: 50px;
+    padding: 10px;
+}
+
+.images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
 }
