@@ -45,3 +45,18 @@ header img {
     margin-right: 20px;
     border-radius: 50%;
 }
+
+/* Style pour le titre h2 */
+.sous-titre {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+/* Style pour la banderole */
+.banderole {
+    background-color: var(--vert_canard);
+    color: var(--beige_clair);
+    text-align: center;
+    margin-top: 50px;
+}
