@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+body {
+    background-color: #f2f2f2; 
+}
+
+.title {
+    margin-top: 20px; 
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0; 
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px); 
+}
+
+main {
+    margin-top: 60px; 
+    margin-bottom: 60px;
+
+}
+
+.main-content {
+    position: relative;
+}
+
+.main-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 470px;
+    width: 4px; 
+    height: 100%;
+    background-color: #ccc; 
+}
+
+h1 {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+label span,
+.error {
+    display: none;
+    color: red;
+}
+
+.error {
+    display: none;
+    color: red;
+}
+
+input[type="text"]:invalid + span {
+    display: inline;
+}
+
+input[type="text"]:valid + .error {
+    display: none;
+}
+
+
+input[type="email"]:invalid + .error {
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+input[type="email"]:invalid + .error {
+    display: block;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+
+.phrase {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    margin-left: 150px; 
+    width: 150px;
+    text-align: center;
+    color: #333; 
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
