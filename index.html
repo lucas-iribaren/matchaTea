@@ -7,6 +7,9 @@
     <link rel="icon" type="image/png" href="matchatea/images/icone-the-matcha.png" />
     <link rel="stylesheet" href="matchatea/css/matcha0.css">
     <link rel="stylesheet" href="matchatea/css/matcha3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -14,32 +17,30 @@
         <h1>SereniTea</h1>
         <img src="matchatea/images/logo-serenitea.png" alt="Logo SereniTea">
     </header>
-    <main>
-        <!-- Barre de navigation -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="matchatea/html/vente.html">Vente</a></li>
-                <li><a href="matchatea/html/apropos.html">A propos</a></li>
-                <li><a href="matchatea/html/histoire.html">Histoire</a></li>
-                <li><a href="matchatea/html/contact.html">Contact</a></li>
-                <li><a href="matchatea/html/profil.html">Compte client</a></li>
+    <!-- Barre de navigation -->
+    <div class="side_bar">
+        <nav class="side_bar_menu">
+            <ul class="list_menu">
+                <a href="index.html"><li>Accueil</li></a>
+                <a href="matchatea/html/vente.html"><li>Boutique</li></a>
+                <a href="matchatea/html/apropos.html"><li>A Propos</li></a>
+                <a href="matchatea/html/histoire.html"><li>Histoire</li></a>
+                <a href="matchatea/html/contact.html"><li>Contact</li></a>
             </ul>
         </nav>
+    </div>
+    <main>
         <section>
             <h2>Bienvenu sur notre site vitrine !</h2>
         </section>
         <section>
             <h2>Nos produits phares</h2>
             <p>Découvrez nos trois produits les plus en vente en ce moment !</p>
-        </section>
-        <section>
-            <img src="matchatea/images/matcha-the.jpeg" alt="Thé matcha" width="100px">
-            <p>Thé matcha</p>
-            <img src="matchatea/images/matcha-the-fraise.jpeg" alt="Thé matcha fraise" width="100px">
-            <p>Thé matcha - Fraise</p>
-            <img src="matchatea/images/matcha-the-vanille.jpeg" alt="Thé matcha fraise" width="100px">
-            <p>Thé matcha - Vanille</p>
+            <div class="image-container">
+                <img src="matchatea/images/matcha-the.jpeg" alt="Thé matcha">
+                <img src="matchatea/images/matcha-the-fraise.jpeg" alt="Thé matcha fraise">
+                <img src="matchatea/images/matcha-the-vanille.jpeg" alt="Thé matcha fraise">
+            </div>
         </section>
     </main>
 </body>
