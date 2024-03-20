@@ -1,6 +1,8 @@
 /* ------------------------  Général  ------------------------- */
 :root{
     --vert_canard: #638889;
+    --vert_fonce: #4c6868;
+    --vert_fonce1: #405151;
     --vert_feuille: #9DBC98;
     --beige_fonce: #EBD9B4;
     --beige_clair: #F9EFDB;
@@ -155,11 +157,10 @@ img {
 }
 a img { border: 0; }
 
-/* scripts */
-body > script {display: none !important;}
 
 main{
     display: flex;
+    margin-left: 100px;
 }
 
 @keyframes rotate-90-ccw {
@@ -192,7 +193,7 @@ header{
 
 .side_bar{
     background-color: var(--vert_feuille);
-    width: 4%; 
+    width: 100px; 
     height: 100%;
     position: fixed;
     top:0;
@@ -219,6 +220,7 @@ header{
 
 .side_bar_menu a {
     transform: rotate(-90deg);
+    font-size: 18px;
 }
 
 .side_bar_menu a {
@@ -240,10 +242,10 @@ footer{
 }
 /* ------------------------  Footer  ------------------------- */@font-face {
     font-family: yozakura;
-    src: url(../police/yozakura/YOZAKURA-Regular.otf);
+    src: url(../police/YOZAKURA-Regular.otf);
   }
 
 h1 {
     font-family: yozakura;
     font-size: 65px;
-  }
+  } 

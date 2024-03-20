@@ -2,23 +2,36 @@ main{
     background-color: var(--beige_clair);
 }
 
-.section_principale{
-    margin-left: 4%;
+i{
+    color: var(--vert_canard)
 }
 
-
+p{
+    margin: 0;
+}
 
 .underline{
     text-decoration: underline;
 }
 
-.center{
+.article_vente{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 2em 0;
 }
-
+.para_contact{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px 0;
+    background-color: var(--vert_fonce1);
+    color: var(--beige_clair);
+}
+.para_contact a{
+    color: var(--beige_clair);
+}
 .section_vente{
     display: flex;
     flex-wrap: wrap;
@@ -34,6 +47,13 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: box-shadow 0.5s;
+}
+
+.produit:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .img_produit{
