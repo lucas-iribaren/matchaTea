@@ -7,12 +7,9 @@
 
 /* Styles généraux pour le corps de la page */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: Kaisei HarunoUmi, serif;
     color: #333;
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
+    background-color: #F9EFDB;
 }
 
 /* En-tête */
@@ -38,7 +35,22 @@ header img {
     height: auto;
     border: 1px solid black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-left: 20px;
+    margin-left: auto;
     margin-right: 20px;
     border-radius: 50%;
+}
+
+.soustitre_accueil {
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-container img {
+    width: 100px;
+    height: auto;
 }
