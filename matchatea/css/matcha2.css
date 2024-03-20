@@ -1,0 +1,31 @@
+.section_principale{
+    margin-left: 4%;
+}
+
+
+
+.produit{
+    margin: 2%;
+    padding: 1%;
+    width: 23%;
+    background-color: grey;
+}
+.img_produit{
+    height: 50px;
+}
+.underline{
+    text-decoration: underline;
+}
+
+.center{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section_vente{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
