@@ -42,3 +42,18 @@ header img {
     margin-right: 20px;
     border-radius: 50%;
 }
+
+.soustitre_accueil {
+    text-align: justify;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-container img {
+    width: 100px;
+    height: auto;
+}
