@@ -1,17 +1,4 @@
-/* ------------------------  Général  ------------------------- */
-:root{
-    --vert_canard: #638889;
-    --vert_fonce: #4c6868;
-    --vert_fonce1: #405151;
-    --vert_feuille: #9DBC98;
-    --beige_fonce: #EBD9B4;
-    --beige_clair: #F9EFDB;
-}
-
-/* base font-size corresponds to 10px and is adapted to rem unit */
-* {
-    box-sizing: border-box;
-}
+/* ----------------------  Reset CSS  ----------------------- */
 html {
 	font-size: 62.5%;
 }
@@ -156,7 +143,23 @@ img {
 	vertical-align: middle;
 }
 a img { border: 0; }
+/* ----------------------  Reset CSS  ----------------------- */
 
+
+
+/* ------------------------  Général  ------------------------- */
+:root{
+    --vert_canard: #638889;
+    --vert_fonce: #4c6868;
+    --vert_fonce1: #405151;
+    --vert_feuille: #9DBC98;
+    --beige_fonce: #EBD9B4;
+    --beige_clair: #F9EFDB;
+}
+
+* {
+    box-sizing: border-box;
+}
 
 main{
     display: flex;
@@ -176,7 +179,10 @@ img{
     object-fit:contain ;
 
 }
-
+@font-face {
+    font-family: yozakura;
+    src: url(../police/YOZAKURA-Regular.otf);
+  }
 /* ------------------------  Général  ------------------------- */
 
 
@@ -189,8 +195,6 @@ header{
 
 
 /* ------------------------  side bar  ------------------------- */
-
-
 .side_bar{
     background-color: var(--vert_feuille);
     width: 100px; 
@@ -240,12 +244,23 @@ footer{
     height: 50px;
     background-color: var(--vert_canard);
 }
-/* ------------------------  Footer  ------------------------- */@font-face {
-    font-family: yozakura;
-    src: url(../police/YOZAKURA-Regular.otf);
-  }
+/* ------------------------  Footer  ------------------------- */
 
 h1 {
     font-family: yozakura;
     font-size: 65px;
   } 
+
+/* --------------------  Medias Queries  --------------------- */
+@media screen and (max-width: 767px) {
+	.side_bar{
+		width: 100%; 
+		padding: 10px;
+		position:sticky;
+		display: flex;
+		
+	}
+}
+
+
+/* --------------------  Medias Queries  --------------------- */
