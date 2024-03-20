@@ -227,4 +227,12 @@ footer{
     height: 50px;
     background-color: rebeccapurple;
 }
-/* ------------------------  Footer  ------------------------- */
+/* ------------------------  Footer  ------------------------- */@font-face {
+    font-family: yozakura;
+    src: url(../police/yozakura/YOZAKURA-Regular.otf);
+  }
+
+h1 {
+    font-family: yozakura;
+    font-size: 65px;
+  }
