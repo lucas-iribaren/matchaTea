@@ -227,11 +227,8 @@ header{
 }
 
 .side_bar_menu li {
-    transform: rotate(-90deg);
+	transform: rotate(-90deg);
     font-size: 18px;
-}
-
-.side_bar_menu li {
     transition: transform 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
