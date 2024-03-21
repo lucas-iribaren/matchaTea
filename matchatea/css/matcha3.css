@@ -98,3 +98,14 @@ header img {
     flex-direction: column;
     justify-content: space-evenly;
 }
+
+@media screen and (max-width: 514px) {
+    .images-container {
+        flex-direction: column;   
+    }
+
+    .produit {
+        width: 80%;
+    }
+    
+}
