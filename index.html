@@ -6,6 +6,7 @@
     <title>SereniTea - Accueil</title>
     <link rel="icon" type="image/png" href="matchatea/images/icone-the-matcha.png" />
     <link rel="stylesheet" href="matchatea/css/matcha0.css">
+    <link rel="stylesheet" href="matchatea/css/matcha2.css">
     <link rel="stylesheet" href="matchatea/css/matcha3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,14 +14,12 @@
 </head>
 <body>
     <header>
-        <!-- En-tête de page avec logo -->
-        <h1>SereniTea</h1>
-        <img src="matchatea/images/logo-serenitea.png" alt="Logo SereniTea">
+        <iframe src="matchatea/html/header.html" frameborder="0" width="100%" height="107"></iframe>
     </header>
     <!-- Barre de navigation -->
     <div class="side_bar">
         <nav class="side_bar_menu">
-            <ul class="list_menu">
+            <ul class="list_sidebar">
                 <a href="index.html"><li>Accueil</li></a>
                 <a href="matchatea/html/vente.html"><li>Boutique</li></a>
                 <a href="matchatea/html/apropos.html"><li>A Propos</li></a>
@@ -30,18 +29,31 @@
         </nav>
     </div>
     <main>
-        <section>
-            <h2>Bienvenu sur notre site vitrine !</h2>
+        <section class="sous-titre">
+            <h2 class="sous-titre">Bienvenue sur la boutique en ligne de SereniTea !</h2>
         </section>
-        <section>
-            <h2>Nos produits phares</h2>
+        <div class="banderole">
             <p>Découvrez nos trois produits les plus en vente en ce moment !</p>
-            <div class="image-container">
-                <img src="matchatea/images/matcha-the.jpeg" alt="Thé matcha">
-                <img src="matchatea/images/matcha-the-fraise.jpeg" alt="Thé matcha fraise">
-                <img src="matchatea/images/matcha-the-vanille.jpeg" alt="Thé matcha fraise">
+        </div>
+
+        <!-- Ajout des images et des paragraphes -->
+        <div class="images-container">
+            <div class="produit">
+                <img class="img_produit" src="matchatea/images/matcha_tea3.png" alt="MatchaTea">
+                <p>Sachet Tea Matcha 30g</p>
             </div>
-        </section>
+            <div class="produit">
+                <img class="img_produit" src="matchatea/images/théière1.png" alt="MatchaTea">
+                <p>Théière japonaise traditionnel bois</p>
+            </div>
+            <div class="produit">
+                <img class="img_produit" src="matchatea/images/matcha_tea2.png" alt="MatchaTea">
+                <p>Sachet Tea Matcha 50g</p>
+            </div>
+        </div>
     </main>
+    <footer>
+        <iframe src="matchatea/html/footer.html" frameborder="0" width="100%" height="425"></iframe>
+    </footer>
 </body>
 </html>
