@@ -163,6 +163,7 @@ a img { border: 0; }
 
 main{
     display: flex;
+	margin-left: 100px;
 }
 
 @keyframes rotate-90-ccw {

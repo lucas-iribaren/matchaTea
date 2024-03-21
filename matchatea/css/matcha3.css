@@ -4,20 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+main{
+    flex-direction: column;
+}
 /* Styles généraux pour le corps de la page */
 body {
     font-family: Kaisei HarunoUmi, serif;
     color: var(--vert_fonce1);
     background-color: var(--beige_clair);
-}
-
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 /* En-tête */
