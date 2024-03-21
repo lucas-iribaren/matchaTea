@@ -7,38 +7,12 @@
 main{
     flex-direction: column;
 }
-/* Styles généraux pour le corps de la page */
-body {
-    font-family: Kaisei HarunoUmi, serif;
-    color: var(--vert_fonce1);
-    background-color: var(--beige_clair);
-}
 
 /* En-tête */
-header {
-    background-color: var(--vert_canard);
-    color: var(--beige_clair);
-    padding: 10px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 100px;
-}
 
-header h1 {
-    margin-left: 600px;
-}
 
-header img {
-    width: 80px;
-    height: auto;
-    border: 1px solid var(--noir);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-left: auto;
-    margin-right: 20px;
-    border-radius: 50%;
-}
+
+
 
 /* Style pour le titre h2 */
 .sous-titre {
