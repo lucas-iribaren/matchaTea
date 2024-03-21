@@ -195,18 +195,22 @@ h1 {
 
 /* ------------------------  Header  ------------------------- */
 header{
-    height: 50px;
     background-color: var(--vert_canard);
+	height: 50px;
 }
-.titre{
+.header_conteneur{
 	margin-left: 100px;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+}
+header * {
 }
 /* ------------------------  Header  ------------------------- */
 
 
 /* ------------------------  side bar  ------------------------- */
-
-
 .side_bar{
     background-color: var(--vert_feuille);
     width: 100px; 
