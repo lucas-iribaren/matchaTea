@@ -159,7 +159,12 @@ a img { border: 0; }
 	--noir: #000000;
 }
 
+body{
+	font-family: Kaisei HarunoUmi, serif;
+    color: var(--vert_fonce1);
+    background-color: var(--beige_clair);
 
+}
 
 main{
     display: flex;
@@ -191,23 +196,43 @@ h1 {
     font-family: yozakura;
     font-size: 65px;
 } 
+
 /* ------------------------  Général  ------------------------- */
 
 
 /* ------------------------  Header  ------------------------- */
 header{
-    background-color: var(--vert_canard);
-	height: 50px;
+	color: var(--beige_clair);
 }
+
 .header_conteneur{
 	margin-left: 100px;
 	display: flex;
 	align-items: center;
-	width: 100%;
 	justify-content: space-between;
 }
-header * {
+
+.header_iframe{
+    background-color: var(--vert_canard);
+	padding: 0 10px ;
 }
+
+.logo_serenitea{
+	width: 80px;
+    height: auto;
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--noir);
+}
+
+.logo_profil{
+	width:50px ;
+}
+
+header h1 {
+    margin: 0;
+}
+
 /* ------------------------  Header  ------------------------- */
 
 
@@ -320,8 +345,8 @@ footer aside{
 /* --------------------  Medias Queries  --------------------- */
 @media screen and (max-width: 767px) {
 	.footer_iframe,
-	.titre
-		{
+	.header_conteneur,
+	.titre {
 		margin-left: 0;
 	}
 	/* sidebar */
