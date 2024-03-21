@@ -8,14 +8,22 @@
 /* Styles généraux pour le corps de la page */
 body {
     font-family: Kaisei HarunoUmi, serif;
-    color: #333;
-    background-color: #F9EFDB;
+    color: var(--vert_fonce1);
+    background-color: var(--beige_clair);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* En-tête */
 header {
-    background-color: #638889;
-    color: #fff;
+    background-color: var(--vert_canard);
+    color: var(--beige_clair);
     padding: 10px 0;
     display: flex;
     justify-content: center;
@@ -25,32 +33,67 @@ header {
 }
 
 header h1 {
-    margin: 0;
-    flex: 1;
-    text-align: center;
+    margin-left: 600px;
 }
 
 header img {
     width: 80px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid var(--noir);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-left: auto;
     margin-right: 20px;
     border-radius: 50%;
 }
 
-.soustitre_accueil {
+/* Style pour le titre h2 */
+.sous-titre {
     text-align: center;
+    margin-bottom: 40px;
+    margin-top: 50px;
 }
 
-.image-container {
+/* Style pour la banderole */
+.banderole {
+    background-color: var(--vert_canard);
+    color: var(--beige_clair);
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.images-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+    margin-top: 50px;
 }
 
-.image-container img {
-    width: 100px;
+.images-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.membres {
+    float: left;
+}
+
+.membres-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: 600px;
+}
+
+.images-membres {
+    width: 200px;
     height: auto;
+    border: 1px solid var(--noir);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: 20px;
+    border-radius: 50%;
 }
