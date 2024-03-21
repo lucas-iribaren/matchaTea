@@ -59,6 +59,7 @@ p{
 
 .img_produit{
     height: 150px;
+    width: 100%;
 }
 
 @media screen and (max-width: 991px){
