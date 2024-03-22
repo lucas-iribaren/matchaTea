@@ -189,7 +189,7 @@ img{
     src: url(../police/YOZAKURA-Regular.otf);
 }
 a {
-	color: black;
+    color: var(--vert_fonce1);
 }
 
 h1 {
