@@ -7,23 +7,49 @@
 main{
     flex-direction: column;
 }
+/* Style pour le corps de la page */
+body {
+    font-family: Kaisei HarunoUmi, serif;
+    color: var(--vert_fonce1);
+    background-color: var(--beige_clair);
+}
 
 /* En-tête */
+header {
+    background-color: var(--vert_canard);
+    color: var(--beige_clair);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100px;
+}
 
+header h1 {
+    margin-left: 600px;
+}
 
+header img {
+    width: 80px;
+    height: auto;
+    border: 1px solid var(--noir);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: 20px;
+    border-radius: 50%;
+}
 
-
-
-/* Style pour le titre h2 */
+/* Style pour le sous-titre */
 .sous-titre {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     margin-top: 50px;
 }
 
 /* Style pour la banderole */
 .banderole {
-    background-color: var(--vert_canard);
+    background-color: var(--vert_fonce1);
     color: var(--beige_clair);
     text-align: center;
     margin-top: 50px;
@@ -50,10 +76,10 @@ main{
 
 .membres-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    height: 100vh;
-    margin-bottom: 600px;
+    height: 300px;
+    margin-bottom: 30px;
 }
 
 .images-membres {
@@ -61,7 +87,35 @@ main{
     height: auto;
     border: 1px solid var(--noir);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-left: auto;
-    margin-right: 20px;
     border-radius: 50%;
+}
+
+/* Sélecteur pour les noms des membres */
+.membres-container p span.nom {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--vert_feuille);
+}
+
+/* Sélecteur pour les descriptions des membres */
+.membres-container p span.description {
+    font-style: italic;
+}
+
+.produit {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 514px) {
+    .images-container {
+        flex-direction: column;   
+    }
+
+    .produit {
+        width: 80%;
+    }
+    
 }
