@@ -90,11 +90,16 @@ header img {
     border-radius: 50%;
 }
 
-/* Sélecteur pour le nom */
+/* Sélecteur pour les noms des membres */
 .membres-container p span.nom {
     font-size: 30px;
     font-weight: bold;
     color: var(--vert_feuille);
+}
+
+/* Sélecteur pour les descriptions des membres */
+.membres-container p span.description {
+    font-style: italic;
 }
 
 .produit {
