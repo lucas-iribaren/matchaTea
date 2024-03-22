@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titre de la page visible dans l'onglet du navigateur -->
+    <title>SereniTea - A propos</title>
+    <!-- Icône de la page visible dans l'onglet du navigateur -->
+    <link rel="icon" type="image/png" href="../images/icone-the-matcha.png" />
+    <!-- Feuilles de style CSS pour le design de la page -->
+    <link rel="stylesheet" href="../css/matcha0.css">
+    <link rel="stylesheet" href="../css/matcha2.css">
+    <link rel="stylesheet" href="../css/matcha3.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- En-tête de la page avec un iframe pour inclure le contenu du header.html -->
+    <header>
+        <iframe src="header.html" frameborder="0" width="100%" height="107"></iframe>
+    </header>
+    <!-- Barre de navigation -->
+    <div class="side_bar">
+        <!-- Bouton de menu burger -->
+        <input type="checkbox" id="burger" class="burger">
+        <label for="burger" class="burger-label">&#9776;</label>
+        <nav class="side_bar_menu">
+            <label for="burger" class="close-menu">&#10006;</label>
+            <ul class="list_sidebar">
+                <a href="../../index.html"><li>Accueil</li></a>
+                <a href="vente.html"><li>Boutique</li></a>
+                <a href="apropos.html"><li>A Propos</li></a>
+                <a href="histoire.html"><li>Histoire</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Section de sous-titre avec un message sur notre équipe -->
+        <section class="sous-titre">
+            <h2 class="sous-titre">Notre équipe</h2>
+        </section>
+        <!-- Article avec une banderole -->
+        <div class="banderole">
+            <p>Découvrez les membres de notre équipe passionés par le Thé Matcha</p>
+        </div>
+
+        <!-- Section contenant des images et des paragraphes pour les membres de l'équipe -->
+        <section class="membres-container">
+            <!-- Directrice SereniTea -->
+            <p class="membres">
+                <img class="images-membres" src="../images/directrice-serenitea.jpeg" alt="Directrice SereniTea">
+            </p>
+            <p>
+               <span class="nom"> Vanny Lamorte</span> <br> <span class="description">Directrice et fondatrice de SereniTea.</span>
+            </p>
+        </section>
+        <section class="membres-container">
+            <!-- Préparateur de commandes SereniTea -->
+            <p>
+                <span class="nom"> Lucas Iribaren</span> <br> <span class="description">Préparateur de commandes SereniTea.</span>
+             </p>
+            <p class="membres">
+                <img class="images-membres" src="../images/preparateur-commandes-serenitea.jpeg" alt="Préparateur de commandes SereniTea">
+            </p>
+        </section>
+        <section class="membres-container">
+            <!-- Spécialiste Thé Matcha SereniTea -->
+            <p class="membres">
+                <img class="images-membres" src="../images/specialiste-the-matcha-serenitea.jpeg" alt="Spécialiste Thé Matcha SereniTea">
+            </p>
+            <p>
+                <span class="nom"> Inès Lorquet</span> <br><span class="description">Spécialiste du thé Matcha chez SereniTea.</span>
+            </p>
+        </section>
+    </main>
+    <!-- Pied de page avec un iframe pour inclure le contenu du footer.html -->
+    <footer>
+        <iframe src="footer.html" frameborder="0" width="100%" height="425"></iframe>
+    </footer>
+</body>
+</html>

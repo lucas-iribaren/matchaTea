@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a5b2b45d49.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/matcha0.css">
+    <link rel="stylesheet" href="../css/matcha2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap" rel="stylesheet">
+    <title>SereniTea Matcha - Profil</title>
+    <link rel="icon" type="image/png" href="../images/icone-the-matcha.png" />
+</head>
+<body>
+    <header>
+        <iframe src="header.html" frameborder="0" width="100%" height="107 " ></iframe>
+    </header>
+    <!-- Barre de navigation -->
+    <div class="side_bar">
+        <!-- Bouton de menu burger -->
+        <input type="checkbox" id="burger" class="burger">
+        <label for="burger" class="burger-label">&#9776;</label>
+        <nav class="side_bar_menu">
+            <label for="burger" class="close-menu">&#10006;</label>
+            <ul class="list_sidebar">
+                <a href="../../index.html"><li>Accueil</li></a>
+                <a href="vente.html"><li>Boutique</li></a>
+                <a href="apropos.html"><li>A Propos</li></a>
+                <a href="histoire.html"><li>Histoire</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+            </ul>
+        </nav>
+    </div>
+    <main class="main_profil">
+        <article class="article_profile">
+            <img src="../images/pp.png" alt="photo_profil">
+            <section class="section_welcome">
+                <h2>Bonjour <strong>Bob,</strong></h2>
+                <p>Vous êtes parmi nous depuis 5 ans déjà 🎉</p>
+            </section>
+        </article>  
+        
+        <section class="section_profil">
+            <h3>Modifier mes informations</h3>
+            <form method="post" action="#">
+                <fieldset>
+                    <legend>Informations personnelles</legend>
+                    <div>
+                        <label for="civilite">Je suis</label>
+                        <select id="civilite" class="" name="civilite">
+                            <option value="un_homme">un homme</option>
+                            <option value="une_femme">une femme</option>
+                            <option value="non_precise">non précisé</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="name">Mon nom</label>
+                        <input class="" id="name" name="name" type="text" placeholder="Bobby">
+                    </div>
+                    <div>
+                        <label for="first_name">Mon prénom</label>
+                        <input class="" id="first_name" name="first_name" type="text" placeholder="Bob">
+                    </div>
+
+                    <div>
+                        <label for="email">Mon email</label>
+                        <input class="" id="email" name="email" type="email" placeholder="bobby@pro.com">
+                    </div>
+                    <div>
+                        <label for="telephone">Mon téléphone</label>
+                        <input class="" id="telephone" name="telephone" type="tel" placeholder="06 58 94 12 37">
+                    </div>
+                    <div>
+                        <label for="adresse_postale">Mon adresse</label>
+                        <input class="" name="adresse_postale" id="adresse_postale" type="text" placeholder="19 rue de la Marmite">
+                    </div>
+                </fieldset>
+                
+                <button class="" type="submit">Enregistrer mes modifications</button>
+            </form>
+        </section>
+        <section class="section_commande_profile">
+            <a href="commandes.html">
+                <h3 class="underline">Mes commandes</h3>
+            </a>
+            <h4>Ma dernière commande</h4>
+            <article class="article_commande">
+                <h5>Commandé le 22 mars 2024</h5>
+                <div class="info_produit">
+                    <img class="img_commandes" src="../images/théière1.png" alt="matcha_tea4">
+                    <div>
+                        <h6>Théière japonaise traditionnel bois</h6>
+                        <p>50€ | Quantité : 1</p>
+                    </div>
+                    <a href="commandes.html" class="voir_commande">Voir ma commande</a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <iframe src="footer.html" frameborder="0" width="100%" height="425" id="footerFrame"></iframe>
+    </footer>
+</body>
+</html>

@@ -3,45 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titre de la page visible dans l'onglet du navigateur -->
     <title>SereniTea - Accueil</title>
+    <!-- Icône de la page visible dans l'onglet du navigateur -->
     <link rel="icon" type="image/png" href="matchatea/images/icone-the-matcha.png" />
+    <!-- Feuilles de style CSS pour le design de la page -->
     <link rel="stylesheet" href="matchatea/css/matcha0.css">
+    <link rel="stylesheet" href="matchatea/css/matcha2.css">
     <link rel="stylesheet" href="matchatea/css/matcha3.css">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- En-tête de la page avec un iframe pour inclure le contenu du header.html -->
     <header>
-        <!-- En-tête de page avec logo -->
-        <h1>SereniTea</h1>
-        <img src="matchatea/images/logo-serenitea.png" alt="Logo SereniTea">
+        <iframe src="matchatea/html/header.html" frameborder="0" width="100%" height="107"></iframe>
     </header>
     <!-- Barre de navigation -->
     <div class="side_bar">
+        <!-- Bouton de menu burger -->
+        <input type="checkbox" id="burger" class="burger">
+        <label for="burger" class="burger-label">&#9776;</label>
         <nav class="side_bar_menu">
-            <ul class="list_menu">
+            <label for="burger" class="close-menu">&#10006;</label>
+            <ul class="list_sidebar">
+                <!-- Lien vers la page d'accueil -->
                 <a href="index.html"><li>Accueil</li></a>
+                <!-- Lien vers la page de vente -->
                 <a href="matchatea/html/vente.html"><li>Boutique</li></a>
+                <!-- Lien vers la page "A Propos" -->
                 <a href="matchatea/html/apropos.html"><li>A Propos</li></a>
+                <!-- Lien vers la page "Histoire" -->
                 <a href="matchatea/html/histoire.html"><li>Histoire</li></a>
+                <!-- Lien vers la page de contact -->
                 <a href="matchatea/html/contact.html"><li>Contact</li></a>
             </ul>
         </nav>
     </div>
     <main>
-        <section>
-            <h2>Bienvenu sur notre site vitrine !</h2>
+        <!-- Section de sous-titre avec un message de bienvenue -->
+        <section class="sous-titre">
+            <h2 class="sous-titre">Bienvenue sur la boutique en ligne de SereniTea !</h2>
         </section>
-        <section>
-            <h2>Nos produits phares</h2>
+        <!-- Article avec une banderole -->
+        <article class="banderole">
             <p>Découvrez nos trois produits les plus en vente en ce moment !</p>
-            <div class="image-container">
-                <img src="matchatea/images/matcha-the.jpeg" alt="Thé matcha">
-                <img src="matchatea/images/matcha-the-fraise.jpeg" alt="Thé matcha fraise">
-                <img src="matchatea/images/matcha-the-vanille.jpeg" alt="Thé matcha fraise">
-            </div>
+        </article>
+
+        <!-- Section contenant des images et des paragraphes pour les produits phares -->
+        <section class="images-container">
+            <!-- Produit 1 -->
+            <a class="produit">
+                <img class="img_produit" src="matchatea/images/matcha_tea3.png" alt="MatchaTea">
+                <p>Sachet Tea Matcha 30g</p>
+            </a>
+            <!-- Produit 2 -->
+            <a class="produit">
+                <img class="img_produit" src="matchatea/images/théière1.png" alt="MatchaTea">
+                <p>Théière japonaise traditionnel bois</p>
+            </a>
+            <!-- Produit 3 -->
+            <a class="produit">
+                <img class="img_produit" src="matchatea/images/matcha_tea2.png" alt="MatchaTea">
+                <p>Sachet Tea Matcha 50g</p>
+            </a>
         </section>
     </main>
+    <!-- Pied de page avec un iframe pour inclure le contenu du footer.html -->
+    <footer>
+        <iframe src="matchatea/html/footer.html" frameborder="0" width="100%" height="425"></iframe>
+    </footer>
 </body>
 </html>

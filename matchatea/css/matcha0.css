@@ -12,8 +12,8 @@ body {
 	color: 
 #000;
 	font-family: "Century Gothic", helvetica, arial, sans-serif;
-	font-size: 1.4em; /* equiv 14px */
-	line-height: 1.5; /* adapt to your design */
+	font-size: 14px;
+	line-height: 1.5;
 }
 
 /* font-sizing for content */
@@ -156,13 +156,19 @@ a img { border: 0; }
     --vert_feuille: #9DBC98;
     --beige_fonce: #EBD9B4;
     --beige_clair: #F9EFDB;
+	--noir: #000000;
 }
 
+body{
+	font-family: Kaisei HarunoUmi, serif;
+    color: var(--vert_fonce1);
+    background-color: var(--beige_clair);
 
+}
 
 main{
     display: flex;
-    margin-left: 100px;
+	margin-left: 100px;
 }
 
 @keyframes rotate-90-ccw {
@@ -183,30 +189,54 @@ img{
     src: url(../police/YOZAKURA-Regular.otf);
 }
 a {
-	color: black;
+    color: var(--vert_fonce1);
 }
 
 h1 {
     font-family: yozakura;
     font-size: 65px;
 } 
+
 /* ------------------------  Général  ------------------------- */
 
 
 /* ------------------------  Header  ------------------------- */
 header{
-    height: 50px;
-    background-color: var(--vert_canard);
+	color: var(--beige_clair);
 }
-.titre{
+
+.header_conteneur{
 	margin-left: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
+
+.header_iframe{
+    background-color: var(--vert_canard);
+	padding: 0 10px ;
+}
+
+.logo_serenitea{
+	width: 80px;
+    height: auto;
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--noir);
+}
+
+.logo_profil{
+	width:50px ;
+}
+
+header h1 {
+    margin: 0;
+}
+
 /* ------------------------  Header  ------------------------- */
 
 
 /* ------------------------  side bar  ------------------------- */
-
-
 .side_bar{
     background-color: var(--vert_feuille);
     width: 100px; 
@@ -242,6 +272,24 @@ header{
 
 .side_bar_menu li:hover {
     transform: rotate(0deg);
+}
+
+/* Style pour le bouton de menu burger */
+.burger {
+    display: none;
+}
+
+.burger-label {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.burger:checked + .burger-label {
+    display: block;
+}
+.close-menu{
+    display: none;
 }
 
 /* ------------------------  Nav  ------------------------- */
@@ -315,8 +363,8 @@ footer aside{
 /* --------------------  Medias Queries  --------------------- */
 @media screen and (max-width: 767px) {
 	.footer_iframe,
-	.titre
-		{
+	.header_conteneur,
+	.titre {
 		margin-left: 0;
 	}
 	/* sidebar */
@@ -332,9 +380,7 @@ footer aside{
 		flex-direction: row;
 	}
 	/* sidebar */
-	/* footer */
-	
-	/* footer */
+
 
 }
 @media screen and (max-width: 514px) {
@@ -346,6 +392,52 @@ footer aside{
 	}
 	.sect_contact{
 		width: 90%;
+	}
+
+	.burger-label {
+        display: block;
+    }
+    
+    .side_bar_menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: var(--vert_feuille);
+        transition: left 0.5 ease;
+    }
+
+    .burger:checked ~ .side_bar_menu {
+        left: 0;
+    }
+    
+    /* Styles pour la liste des liens */
+    .list_sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .list_sidebar li a {
+        text-decoration: none;
+        color: var(--vert_fonce1);
+    }
+
+    .close-menu {
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .burger:checked ~ .side_bar_menu .close-menu {
+        display: block; /* La croix est affichée lorsque le menu est ouvert */
+    }
+	.nav_footer,
+	.footer_iframe aside {
+		padding: 0;
 	}
 }
 
