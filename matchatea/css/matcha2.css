@@ -161,7 +161,7 @@ form{
 
 @media screen and (max-width: 767px) {
     main{
-        margin-left: 0;
+        margin: 0;
     }
     .section_vente{
         width: 100%;
@@ -174,9 +174,21 @@ form{
     }
     .main_profil{
         margin: auto;
+        width: 95%;
     }
     .article_profile{
         flex-direction: column;
     }
-
+    .voir_commande{
+        display: none;
+    }
+    .section_commande{
+        width: 100%;
+    }
+    .section_commande h3{
+        text-align: center;
+    }
+    .img_commandes_xl{
+        width: 25%;
+    }
 }
