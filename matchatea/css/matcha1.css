@@ -7,7 +7,7 @@ hr {
     border-top: 1px solid #ccc;
     margin: 20px 0; 
 }
-
+/* classe content page contact*/
 .content {
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@ hr {
     margin: auto;
     height: calc(100vh - 120px); 
 }
-
+/* classe content page histoire*/
 .content2 {
     display: flex;
     flex-direction: column;
@@ -30,7 +30,7 @@ hr {
     margin: auto;
     height: calc(100vh - 120px); 
 }
-
+/* classe content page admin-uti*/
 .content3 {
     display: flex;
     flex-direction: column;
