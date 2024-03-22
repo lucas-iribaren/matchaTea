@@ -64,12 +64,88 @@ p{
 }
 /*-------------------   Vente  ------------------- */
 /*-------------------   Profil  ------------------- */
+.main_profil{
+    justify-content: space-evenly;
+}
+
+.main_profile > * {  
+    margin: 0 auto;
+}
+
 form{
     display: flex;
     flex-direction: column;
+    margin: 2em 0;
+}
+.article_commande{
+    padding: 16px;
+    background-color: var(--beige_fonce);
+    width: 100%;
+    border-radius: 5px;
+    margin: 20px 0;
+
+}
+.article_commande h5{
+    border-bottom: 1px dashed var(--vert_feuille) ;
+    padding-bottom: 10px;
+}
+.info_produit{
+    display: flex;
+    flex-direction: row;
+    padding: 16px 0;
+}
+.img_commandes{
+    max-width: 100px;
+    padding-right: 5px;
+    margin-right: 5px;
+    border-right: 1px dashed var(--vert_feuille) ;
+
+}
+.voir_commande{
+    margin: auto;
+    border-style: none;
+    border-radius: 5px;
+    background-color: var(--vert_feuille);
+    padding: 8px;
+
 }
 /*-------------------   Profil  ------------------- */
+/*------------------   Commandes  ------------------ */
 
+.main_commande > *{
+    margin: 0 auto;
+    width: 80%;
+
+}
+
+.img_commandes_xl{
+    max-width: 200px;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px dashed var(--vert_feuille) ;
+}
+
+.info_commande{
+    border-bottom: 1px solid var(--vert_feuille) ;
+    padding-bottom: 10px;
+    
+}
+/*------------------   Commandes  ------------------ */
+@media screen and (max-width: 1289px){
+    .main_profil{
+        flex-direction: column;
+        width: 70%;
+        margin-left: 200px;
+
+    }
+    .article_profile{
+        display: flex;
+        justify-content: space-around;
+        align-items: center ;
+        margin: 30px 0  ;
+    }
+
+}
 @media screen and (max-width: 991px){
     .section_vente{
         justify-content: space-evenly;
@@ -77,6 +153,9 @@ form{
     }
     .produit{
         width: 40%;
+    }
+    .main_profil{
+        margin-left: 150px;
     }
 }
 
@@ -93,6 +172,11 @@ form{
     .article_vente{
         margin-top: 10px;
     }
-
+    .main_profil{
+        margin: auto;
+    }
+    .article_profile{
+        flex-direction: column;
+    }
 
 }
