@@ -1,3 +1,4 @@
+
 .title {
     margin-top: 20px; 
 }
@@ -30,7 +31,6 @@ form{
     align-items: center;
     text-align: center;
     margin: auto;
-    height: calc(100vh - 120px); 
 }
 /* classe content page admin-uti*/
 .content3 {
@@ -183,5 +183,15 @@ tr th, tr td {
     }
     .phrase{
         width: 100%;
+    }
+    main{
+        margin: 10px 5px;
+    }
+    .content{
+        padding: 0 20px ;
+        border-left: none;
+    }
+    .content2{
+        width: 80%;
     }
 }
