@@ -82,14 +82,19 @@ header img {
     margin-bottom: 30px;
 }
 
-
-
 .images-membres {
     width: 200px;
     height: auto;
     border: 1px solid var(--noir);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+}
+
+/* Sélecteur pour le nom */
+.membres-container p span.nom {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--vert_feuille);
 }
 
 .produit {
