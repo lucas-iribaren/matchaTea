@@ -1,3 +1,5 @@
+/*-------------------   Vente  ------------------- */
+
 main{
     background-color: var(--beige_clair);
 }
@@ -60,6 +62,13 @@ p{
 .img_produit{
     height: 150px;
 }
+/*-------------------   Vente  ------------------- */
+/*-------------------   Profil  ------------------- */
+form{
+    display: flex;
+    flex-direction: column;
+}
+/*-------------------   Profil  ------------------- */
 
 @media screen and (max-width: 991px){
     .section_vente{
