@@ -195,7 +195,9 @@ h1 {
     font-family: yozakura;
     font-size: 65px;
 } 
-
+ul {
+    padding: 0;
+}
 /* ------------------------  Général  ------------------------- */
 
 
