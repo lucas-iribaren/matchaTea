@@ -85,6 +85,17 @@ main{
     justify-content: space-evenly;
 }
 
+/* Style pour le bouton de menu burger */
+.burger {
+    display: none;
+}
+
+.burger-label {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
 /* Media query pour les écrans de petite taille, ajustant la disposition et la largeur des produits */
 @media screen and (max-width: 514px) {
     .images-container {
@@ -93,5 +104,35 @@ main{
 
     .produit {
         width: 80%;
+    }
+
+    .burger-label {
+        display: block;
+    }
+    
+    .side_bar_menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: var(--vert_feuille);
+        transition: left 0.5 ease;
+    }
+
+    .burger:checked ~ .side_bar_menu {
+        left: 0;
+    }
+    
+    /* Styles pour la liste des liens */
+    .list_sidebar {
+        list-style-type: none; /* Supprime les puces */
+        padding: 0;
+        margin: 0;
+    }
+
+    .list_sidebar li a {
+        text-decoration: none; /* Supprime le soulignement des liens */
+        color: var(--vert_fonce1); /* Couleur du texte des liens */
     }
 }
