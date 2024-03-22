@@ -1,21 +1,23 @@
-/* Réinitialisation des marges et des paddings pour un meilleur contrôle */
+/* Réinitialisation des marges et des paddings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Configuration de la disposition du main en colonne */
 main{
     flex-direction: column;
 }
 
-/* Style pour le sous-titre */
+/* Style pour le sous-titre, centré avec des marges */
 .sous-titre {
     text-align: center;
     margin-bottom: 0px;
     margin-top: 50px;
 }
 
-/* Style pour la banderole */
+/* Style pour la banderole, avec couleur de fond, texte centré et des marges */
 .banderole {
     background-color: var(--vert_fonce1);
     color: var(--beige_clair);
@@ -24,6 +26,7 @@ main{
     padding: 10px;
 }
 
+/* Configuration pour le conteneur des images, centré avec des marges */
 .images-container {
     display: flex;
     justify-content: center;
@@ -31,6 +34,7 @@ main{
     margin-top: 50px;
 }
 
+/* Configuration pour le conteneur de texte associé aux images, centré avec des marges */
 .images-text-container {
     display: flex;
     justify-content: center;
@@ -38,10 +42,12 @@ main{
     margin-top: 50px;
 }
 
+/* Style pour les images des membres */
 .membres {
     float: left;
 }
 
+/* Configuration pour le conteneur des membres, avec disposition flex et espacement */
 .membres-container {
     display: flex;
     justify-content: space-evenly;
@@ -50,6 +56,7 @@ main{
     margin-bottom: 30px;
 }
 
+/* Style pour les images des membres, avec dimensions spécifiques, bordure, ombre et arrondi */
 .images-membres {
     width: 200px;
     height: auto;
@@ -58,18 +65,19 @@ main{
     border-radius: 50%;
 }
 
-/* Sélecteur pour les noms des membres */
+/* Sélecteur pour les noms des membres, avec taille de police, poids et couleur */
 .membres-container p span.nom {
     font-size: 30px;
     font-weight: bold;
     color: var(--vert_feuille);
 }
 
-/* Sélecteur pour les descriptions des membres */
+/* Sélecteur pour les descriptions des membres, avec style italique */
 .membres-container p span.description {
     font-style: italic;
 }
 
+/* Configuration pour le conteneur des produits, avec hauteur et disposition flex */
 .produit {
     height: 250px;
     display: flex;
@@ -77,6 +85,8 @@ main{
     justify-content: space-evenly;
 }
 
+
+/* Media query pour les écrans de petite taille, ajustant la disposition et la largeur des produits */
 @media screen and (max-width: 514px) {
     .images-container {
         flex-direction: column;   
@@ -85,5 +95,5 @@ main{
     .produit {
         width: 80%;
     }
-    
+
 }
