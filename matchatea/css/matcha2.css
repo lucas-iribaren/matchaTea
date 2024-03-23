@@ -132,6 +132,52 @@ form{
     
 }
 /*------------------   Commandes  ------------------ */
+/*------------------   Panel  ------------------ */
+.main_panel{
+    height: 60vh;
+}
+.section_panel{
+    width: 85%;
+    height: 100%;
+    margin: auto;
+}
+.menu {
+    height: 100%;
+    padding: 10px 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.menu-items {
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    background-color: var(--beige_fonce);
+
+}
+
+
+.menu-items li h2 {
+    display: block;
+    padding: 10px 20px;
+
+}
+
+.dropdown-menu {
+    display: none;
+    padding: 0 20px 20px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+/*------------------   Panel  ------------------ */
+
 @media screen and (max-width: 1289px){
     .main_profil{
         flex-direction: column;
