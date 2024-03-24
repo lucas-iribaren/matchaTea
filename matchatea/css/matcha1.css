@@ -41,11 +41,10 @@ form{
     align-items: center;
     text-align: center;
     margin: auto;
-    height: calc(100vh - 120px); 
 }
 
 main {
-    margin: 60px;
+    margin: 60px 0;
     display: flex;
 }
 
@@ -141,37 +140,15 @@ input[type="submit"]:hover {
 table {
     width: 100%;
     border-collapse: collapse;
-}
-
-th, td {
-    border: 1px solid #ccc;
+  }
+  th, td {
     padding: 8px;
-}
-
-thead th {
-    background-color: #f2f2f2;
-}
-
-tbody td {
-    text-align: center;
-}
-
-tbody td:first-child {
     text-align: left;
-}
-
-tbody td:last-child {
-    text-align: right;
-}
-
-tr {
-    display: flex;
-}
-
-tr th, tr td {
-    flex: 1;
-}
-
+    border: 1px solid var(--vert_feuille);
+  }
+  th {
+    background-color: var(--beige_fonce);
+  }
 /* Partie responsive pour les téléphones*/
 
 @media screen and (max-width: 767px) {
@@ -185,7 +162,7 @@ tr th, tr td {
         width: 100%;
     }
     main{
-        margin: 10px 5px;
+        margin: 10px 0;
     }
     .content{
         padding: 0 20px ;
@@ -193,5 +170,8 @@ tr th, tr td {
     }
     .content2{
         width: 80%;
+    }
+    .content3{
+        width: 100%;
     }
 }
