@@ -94,7 +94,6 @@ li { list-style: none; }
 a { text-decoration: none;}
 /* avoid top margins on first content element */
 p:first-child,
-ul:first-child,
 ol:first-child,
 dl:first-child,
 blockquote:first-child,
