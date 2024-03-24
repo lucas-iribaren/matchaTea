@@ -177,7 +177,20 @@ form{
 }
 
 /*------------------   Panel  ------------------ */
-
+/*------------------   Admin-commande  ------------------ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid var(--vert_feuille);
+  }
+  th {
+    background-color: var(--beige_fonce);
+  }
+/*------------------   Admin-commande  ------------------ */
 @media screen and (max-width: 1289px){
     .main_profil{
         flex-direction: column;
@@ -237,5 +250,12 @@ form{
     }
     .img_commandes_xl{
         width: 25%;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    td,
+    th{
+        font-size: 0.73em;
     }
 }
