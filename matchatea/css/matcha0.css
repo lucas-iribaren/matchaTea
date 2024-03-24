@@ -367,7 +367,8 @@ footer aside{
 	/* sidebar */
 	.side_bar{
 		position: static;
-		width: 100%; 
+		width: 100%;
+		padding-left: 10px; 
 	}
     .side_bar_menu li {
 		transform: rotate(0deg);
@@ -410,6 +411,8 @@ footer aside{
 
     .burger:checked ~ .side_bar_menu {
         left: 0;
+		display: flex;
+		flex-direction: column;
     }
     
     /* Styles pour la liste des liens */
@@ -420,6 +423,7 @@ footer aside{
         align-items: center;
         width: 100%;
         padding-left: 0;
+		height: 100%;
     }
 
     .list_sidebar li a {
@@ -434,7 +438,7 @@ footer aside{
 
     .burger:checked ~ .side_bar_menu .close-menu {
         display: block; /* La croix est affichée lorsque le menu est ouvert */
-		margin-left: 5px ;
+		margin-left: 10px ;
     }
 	.nav_footer,
 	.footer_iframe aside {
